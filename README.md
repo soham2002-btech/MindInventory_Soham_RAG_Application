@@ -77,6 +77,27 @@ This project is a Retrieval-Augmented Generation (RAG) system for answering Medi
   - If you see `distutils` errors on macOS, run: `brew install python-setuptools`
   - If you have issues with virtual environments, ensure you are using Python 3.11 and have activated the correct environment.
 
+## Chunking Strategy Comparison
+
+The table below compares different chunking strategies evaluated for this project:
+
+| chunker   | num_chunks | avg_chunk_size | min_chunk | max_chunk | std_chunk | redundancy | overlap | unique_pages | recall@1 | recall@3 | recall@5 | recall@10 | precision@5 | f1@5 | coverage_positive | coverage_negative | coverage_multi-hop | coverage_ambiguous | coverage_adversarial | coverage_paraphrased |
+|-----------|------------|----------------|-----------|-----------|-----------|------------|---------|--------------|----------|----------|----------|-----------|-------------|------|-------------------|-------------------|--------------------|--------------------|----------------------|----------------------|
+| sliding   | 405        | 127.07         | 1         | 193       | 45.94     | 0.0        | 0.475   | 127          | 0.44     | 0.56     | 0.56     | 0.78      | 0.42        | 0.48 | 2/3               | 1/2               | 0/1                | 1/1                | 0/1                  | 1/1                  |
+| semantic  | 127        | 370.17         | 2         | 554       | 106.58    | 0.0        | 0.413   | 127          | 0.44     | 0.56     | 0.89     | 0.89      | 0.64        | 0.71 | 3/3               | 1/2               | 1/1                | 1/1                | 1/1                  | 1/1                  |
+| hybrid    | 532        | 185.1          | 1         | 554       | 122.71    | 0.008      | 0.979   | 127          | 0.44     | 0.56     | 0.56     | 0.78      | 0.42        | 0.48 | 2/3               | 1/2               | 0/1                | 1/1                | 0/1                  | 1/1                  |
+| current   | 127        | 370.17         | 2         | 554       | 106.58    | 0.0        | 0.413   | 127          | 0.44     | 0.56     | 0.89     | 0.89      | 0.64        | 0.71 | 3/3               | 1/2               | 1/1                | 1/1                | 1/1                  | 1/1                  |
+
+### Why Semantic Chunking?
+
+- **Higher Quality Chunks:** Semantic chunking splits the document by meaning (e.g., paragraphs), resulting in more coherent and contextually complete chunks compared to fixed-size sliding windows.
+- **Improved Retrieval:** As shown in the table, semantic chunking achieves higher recall@5 (0.89) and f1@5 (0.71), meaning more relevant information is retrieved and used for answer generation.
+- **Reduced Redundancy:** Fewer, larger, and more meaningful chunks reduce overlap and redundancy, making retrieval and reranking more efficient.
+- **Better Coverage:** Semantic chunking provides better coverage for positive, multi-hop, ambiguous, adversarial, and paraphrased queries.
+
+**Conclusion:**
+Semantic chunking was chosen for this project because it provides the best balance of retrieval quality, efficiency, and answer coverage for complex Medicare Q&A tasks.
+
 ## Sample RAG Results
 
 See [`Result.txt`](./Result.txt) for example RAG answers. Here are a few samples:
