@@ -1,0 +1,143 @@
+1){
+{
+  "query": "Lung cancer?"
+}
+{
+  "answer": "Lung cancer screening is covered by Medicare for individuals between the ages of 50-77 who have a history of smoking and meet certain criteria. The Part B deductible applies, and you pay nothing for this screening test if your doctor accepts assignment. Before your first lung cancer screening, you'll need to schedule an appointment with a health care provider to discuss the benefits and risks of lung cancer screening to decide if the screening is right for you. Requirements/conditions: * You're between 50-77 years old. * You don't have signs or symptoms of lung cancer (you're asymptomatic). * You've had a history of smoking. * You have a tobacco smoking history of at least 20 \"pack years\" (an average of one pack—20 cigarettes—per day for 20 years). * You get an order from your doctor.",
+  "source_pages": [
+    34,
+    37,
+    45
+  ],
+  "confidence_score": 0.4458239674568176,
+  "chunk_size": 386,
+  "total_chunks_used": 5
+}
+
+2)
+{
+    {
+  "query": "What’s the Medicare drug coverage (Part D) late enrollment penalty?"
+    }
+    {
+  "answer": "The Medicare drug coverage (Part D) late enrollment penalty is calculated by multiplying 1% of the \"national base beneficiary premium\" ($36.78 in 2025) by the number of full, uncovered months that you were eligible but didn't have Medicare drug coverage (Part D) and went without other creditable prescription drug coverage. The final amount is rounded to the nearest $0.10 and added to your monthly premium. Requirements or conditions mentioned in the context for calculating the late enrollment penalty include: * How long you didn't have credible prescription drug coverage (Part D) after your Initial Enrollment Period ended * Whether you had other credible prescription drug coverage (Part D) * Your eligibility for Medicare drug coverage (Part D) * The national base beneficiary premium amount ($36.78 in 2025) * The rounding rule to the nearest $0.10 for the final amount. Facts mentioned in the context include: * Mrs. Martinez's late enrollment penalty for Medicare drug coverage (Part D) in 2024 was $10.06. * The penalty was calculated by multiplying 1% of the national base beneficiary premium amount ($36.78 in 2025) by the number of full, uncovered months she was eligible but didn't have Medicare drug coverage (Part D) and went without other credible prescription drug coverage. * The penalty is paid for as long as Mrs. Martinez has Medicare drug coverage (Part D).",
+  "source_pages": [
+    79,
+    84,
+    85
+  ],
+  "confidence_score": 0.7359877824783325,
+  "chunk_size": 554,
+  "total_chunks_used": 5
+   }
+}
+}
+
+3)
+{
+    {
+  "query": "What we get under HIV Screening?"
+}
+    {
+  "answer": "What we get under HIV Screening? Medicare covers HIV screening tests once per year if you're between 15-65 years old and at increased risk for HIV. This includes: * Yearly HIV screening tests for those who are at increased risk for HIV, as determined by your doctor or other health care provider. * Up to 3 HIV screening tests during a pregnancy if you're pregnant and at increased risk for HIV. Requirements/Conditions: * You must be between 15-65 years old. * You must be at increased risk for HIV, as determined by your doctor or other health care provider. Relevant Facts: * Medicare covers HIV screening tests once per year if you're at increased risk for HIV. * Up to 3 HIV screening tests during a pregnancy are covered if you're pregnant and at increased risk for HIV.",
+  "source_pages": [
+    7,
+    43,
+    50
+  ],
+  "confidence_score": 0.5223921537399292,
+  "chunk_size": 403,
+  "total_chunks_used": 5
+}
+}
+
+4)
+{
+    {
+  "query": "What is Some of the items and services that Original Medicare doesn’t cover ?"
+    }
+    {
+  "answer": "Some of the items and services that Original Medicare doesn't cover include: 1. Routine physical exams: Original Medicare does not cover routine physical exams. 2. Hearing aids and exams for fitting them: Original Medicare does not cover hearing aids or exams for fitting them. 3. Concierge care (also called concierge medicine, retainer-based medicine, boutique medicine, platinum practice, or direct care): Original Medicare does not cover concierge care, which refers to medical care that is paid for through an annual fee or retainer rather than through traditional fee-for-service billing. 4. Covered items or services you get from a doctor or other provider that has opted out of participating in Medicare: Original Medicare does not cover items or services received from a doctor or other provider who has opted out of participating in Medicare, except in the case of an emergency or urgent need. 5. Most dental care: Original Medicare typically does not cover most dental care, including routine cleanings, fillings, tooth extractions, or items like dentures. However, some dental services may be covered if they are closely related to a covered medical service, such as a heart valve repair or replacement. 6. Long-term care: Original Medicare and most health insurance, including Medigap, do not pay for non-medical long-term care services, such as personal care assistance, like help with everyday activities, including dressing, bathing, and using the bathroom. Non-medical long-term care services may also include home-delivered meals, adult day health care, home and community-based services, and others. You may be eligible for some of these services through Medicaid or you can choose to buy private long-term care insurance. Note: The information provided is based on the context given and may not be comprehensive or up-to-date. It is important to consult with Medicare or a healthcare professional for the most accurate and current information.",
+  "source_pages": [
+    9,
+    44,
+    56,
+    57,
+    75
+  ],
+  "confidence_score": 0.7058457136154175,
+  "chunk_size": 139,
+  "total_chunks_used": 5
+}
+}
+
+5)
+{
+    {
+  "query": "what is TTY users calling Phone number?"
+}
+    {
+  "answer": "For part which is related to what is TTY users calling Phone number? The context provides the following information: * Page 124 of the National Medicare Handbook states that TTY users can call 1-877-486-2048 for assistance. * Page 127 of the National Medicare Handbook provides the U.S. Department of Health and Human Services' Centers for Medicare & Medicaid Services address as 7500 Security Boulevard, Baltimore, MD 21244-1850. Based on these details, the TTY users can call 1-877-486-2048 for assistance. Therefore, the answer to part which is related to what is TTY users calling Phone number? is 1-877-486-2048.",
+  "source_pages": [
+    22,
+    107,
+    124,
+    127
+  ],
+  "confidence_score": 0.4491378664970398,
+  "chunk_size": 196,
+  "total_chunks_used": 5
+}
+}
+
+6)
+{
+    {
+  "query": "What are my rights if my plan stops participating in Medicare?"
+     }
+    {
+  "answer": "For the part related to What are my rights if my plan stops participating in Medicare? You have the right to choose another Medicare plan from October 15 – December 7 if your current plan stops participating in Medicare. Your coverage will begin on January 1 if you choose a new plan during this time. You also have a special right to join another Medicare plan until the last day in February. Additionally, you may have the right to buy certain Medigap policies within 63 days after your plan coverage ends. Requirements or conditions mentioned in the context: * Your plan stopping participation in Medicare * Time frame for choosing a new plan (October 15 – December 7) * Special right to join another Medicare plan until the last day in February * Right to buy certain Medigap policies within 63 days after plan coverage ends.",
+  "source_pages": [
+    63,
+    66,
+    98,
+    102
+  ],
+  "confidence_score": 0.8221145868301392,
+  "chunk_size": 399,
+  "total_chunks_used": 5
+}
+}
+
+7)
+{
+    {
+  "query": "Kidney Dialysis Service and supplies"
+    }
+    {
+  "answer": "Kidney Dialysis Service and supplies are covered by Medicare under certain circumstances. To be eligible for coverage, an individual must have End-Stage Renal Disease (ESRD). Medicare covers 3 dialysis treatments per week, including renal dialysis drugs and biological products, laboratory tests, home dialysis training, support services, equipment, and supplies. The dialysis facility is responsible for coordinating the individual's dialysis services, and they pay 20% of the Medicare-approved amount. Additionally, Medicare covers up to 6 sessions of kidney disease education services if the individual has Stage 4 chronic kidney disease that will usually require dialysis or a kidney transplant. The Part B deductible applies to these services.",
+  "source_pages": [
+    5,
+    16,
+    44,
+    122
+  ],
+  "confidence_score": 0.4773402512073517,
+  "chunk_size": 371,
+  "total_chunks_used": 5
+}
+}
+
+8)
+{
+   {
+  "query": "What is Capital of India?"
+   } 
+   {
+  "answer": "Not found in context. The question \"What is Capital of India?\" does not appear in the provided context.",
+  "source_pages": [],
+  "confidence_score": 0,
+  "chunk_size": 0,
+  "total_chunks_used": 0
+}
+}

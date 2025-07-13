@@ -1,0 +1,87 @@
+[nltk_data] Error loading punkt: <urlopen error [SSL:
+[nltk_data]     CERTIFICATE_VERIFY_FAILED] certificate verify failed:
+[nltk_data]     unable to get local issuer certificate (_ssl.c:1000)>
+INFO:llm_answer:Initializing LLMAnswer with Ollama URL: http://localhost:11434/api/generate
+INFO:llm_answer:Using model: llama2:7b
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: mps
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO:llm_answer:Loaded sentence transformer for confidence scoring
+INFO:llm_answer:Testing Ollama connection...
+INFO:llm_answer:✅ Ollama is running and accessible
+INFO:pdf_chunker:Extracting text from PDF: medicare-and-you.pdf
+INFO:pdf_chunker:PDF has 128 pages
+INFO:pdf_chunker:Processed 10/128 pages
+INFO:pdf_chunker:Processed 20/128 pages
+INFO:pdf_chunker:Processed 30/128 pages
+INFO:pdf_chunker:Processed 40/128 pages
+INFO:pdf_chunker:Processed 50/128 pages
+INFO:pdf_chunker:Processed 60/128 pages
+INFO:pdf_chunker:Processed 70/128 pages
+INFO:pdf_chunker:Processed 80/128 pages
+INFO:pdf_chunker:Processed 90/128 pages
+INFO:pdf_chunker:Processed 100/128 pages
+INFO:pdf_chunker:Processed 110/128 pages
+INFO:pdf_chunker:Processed 120/128 pages
+WARNING:pdf_chunker:Page 127 is empty, skipping
+INFO:pdf_chunker:Extracted text from 127 non-empty pages
+INFO:pdf_chunker:Processed page 20/127: 4 chunks
+INFO:pdf_chunker:Processed page 40/127: 4 chunks
+INFO:pdf_chunker:Processed page 60/127: 4 chunks
+INFO:pdf_chunker:Processed page 80/127: 3 chunks
+INFO:pdf_chunker:Processed page 100/127: 4 chunks
+INFO:pdf_chunker:Processed page 120/127: 3 chunks
+INFO:pdf_chunker:Processed page 127/127: 1 chunks
+INFO:pdf_chunker:Total chunks created: 405
+INFO:embed_store:Initializing HybridEmbedStore with persist directory: chroma_db
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: mps
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: mps
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: mps
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+INFO:embed_store:Loaded multiple sentence transformer models
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:embed_store:Created/loaded ChromaDB collection: medicare_chunks_dense_small
+INFO:embed_store:Created/loaded ChromaDB collection: medicare_chunks_dense_large
+INFO:embed_store:Created/loaded ChromaDB collection: medicare_chunks_dense_multilingual
+INFO:embed_store:Adding 405 chunks to the hybrid embedding store
+INFO:embed_store:Indexing with dense_small model...
+INFO:embed_store:Indexing batch 1/9 (50 chunks) with dense_small
+INFO:embed_store:Indexing batch 2/9 (50 chunks) with dense_small
+INFO:embed_store:Indexing batch 3/9 (50 chunks) with dense_small
+INFO:embed_store:Indexing batch 4/9 (50 chunks) with dense_small
+INFO:embed_store:Indexing batch 5/9 (50 chunks) with dense_small
+INFO:embed_store:Indexing batch 6/9 (50 chunks) with dense_small
+INFO:embed_store:Indexing batch 7/9 (50 chunks) with dense_small
+INFO:embed_store:Indexing batch 8/9 (50 chunks) with dense_small
+INFO:embed_store:Indexing batch 9/9 (5 chunks) with dense_small
+INFO:embed_store:Indexing with dense_large model...
+INFO:embed_store:Indexing batch 1/9 (50 chunks) with dense_large
+INFO:embed_store:Indexing batch 2/9 (50 chunks) with dense_large
+INFO:embed_store:Indexing batch 3/9 (50 chunks) with dense_large
+INFO:embed_store:Indexing batch 4/9 (50 chunks) with dense_large
+INFO:embed_store:Indexing batch 5/9 (50 chunks) with dense_large
+INFO:embed_store:Indexing batch 6/9 (50 chunks) with dense_large
+INFO:embed_store:Indexing batch 7/9 (50 chunks) with dense_large
+INFO:embed_store:Indexing batch 8/9 (50 chunks) with dense_large
+INFO:embed_store:Indexing batch 9/9 (5 chunks) with dense_large
+INFO:embed_store:Indexing with dense_multilingual model...
+INFO:embed_store:Indexing batch 1/9 (50 chunks) with dense_multilingual
+INFO:embed_store:Indexing batch 2/9 (50 chunks) with dense_multilingual
+INFO:embed_store:Indexing batch 3/9 (50 chunks) with dense_multilingual
+INFO:embed_store:Indexing batch 4/9 (50 chunks) with dense_multilingual
+INFO:embed_store:Indexing batch 5/9 (50 chunks) with dense_multilingual
+INFO:embed_store:Indexing batch 6/9 (50 chunks) with dense_multilingual
+INFO:embed_store:Indexing batch 7/9 (50 chunks) with dense_multilingual
+INFO:embed_store:Indexing batch 8/9 (50 chunks) with dense_multilingual
+INFO:embed_store:Indexing batch 9/9 (5 chunks) with dense_multilingual
+INFO:embed_store:Building TF-IDF matrix for sparse retrieval...
+INFO:embed_store:TF-IDF matrix built with 5794 features
+INFO:embed_store:Successfully indexed all 405 chunks with hybrid approach
+[INIT] Starting app initialization...
+[INIT] Loading LLMAnswer...
+[INIT] LLMAnswer loaded successfully.
+[INIT] Loading and chunking PDF: medicare-and-you.pdf
+[INIT] PDF chunked into 405 chunks.
+[INIT] Initializing HybridEmbedStore at chroma_db
+[INIT] Chunks added to HybridEmbedStore.

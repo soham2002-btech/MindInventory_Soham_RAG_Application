@@ -1,0 +1,5 @@
+chunker,num_chunks,avg_chunk_size,min_chunk,max_chunk,std_chunk,redundancy,overlap,unique_pages,recall@1,recall@3,recall@5,recall@10,precision@5,f1@5,coverage_positive,coverage_negative,coverage_multi-hop,coverage_ambiguous,coverage_adversarial,coverage_paraphrased
+sliding,405,127.07,1,193,45.94,0.0,0.475,127,0.44,0.56,0.56,0.78,0.42,0.48,2/3,1/2,0/1,1/1,0/1,1/1
+semantic,127,370.17,2,554,106.58,0.0,0.413,127,0.44,0.56,0.89,0.89,0.64,0.71,3/3,1/2,1/1,1/1,1/1,1/1
+hybrid,532,185.1,1,554,122.71,0.008,0.979,127,0.44,0.56,0.56,0.78,0.42,0.48,2/3,1/2,0/1,1/1,0/1,1/1
+current,532,185.1,1,554,122.71,0.008,0.979,127,0.44,0.56,0.56,0.56,0.4,0.46,2/3,1/2,0/1,1/1,0/1,1/1
