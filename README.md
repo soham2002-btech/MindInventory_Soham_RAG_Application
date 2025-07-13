@@ -18,16 +18,6 @@ flowchart TD
     I --> C
     I --> D
     H --> J[Final Answer]
-    style B fill:#ffe,stroke:#333,stroke-width:2px
-    style I fill:#f9f,stroke:#333,stroke-width:2px
-    style G fill:#bbf,stroke:#333,stroke-width:2px
-    style F fill:#bfb,stroke:#333,stroke-width:2px
-    style E fill:#bff,stroke:#333,stroke-width:2px
-    style H fill:#ffb,stroke:#333,stroke-width:2px
-    style J fill:#fff,stroke:#333,stroke-width:2px
-    style C fill:#ccf,stroke:#333,stroke-width:2px
-    style D fill:#ccf,stroke:#333,stroke-width:2px
-    style A fill:#fff,stroke:#333,stroke-width:2px
 ```
 
 ## How It Works
