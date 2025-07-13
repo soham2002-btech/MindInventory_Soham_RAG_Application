@@ -4,21 +4,7 @@ This project is a Retrieval-Augmented Generation (RAG) system for answering Medi
 
 ## RAG Pipeline Flow
 
-```mermaid
-flowchart TD
-    A[User Query] --> B[Text Chunking (Semantic)]
-    B --> C[ChromaDB Retrieval]
-    B --> D[FAISS Retrieval]
-    C --> E[Combine Chroma + FAISS Results]
-    D --> E
-    E --> F[Rerank Top 5 by Similarity]
-    F --> G[Validation Node]
-    G -- Valid --> H[LLM Generation]
-    G -- Not Valid --> I[LLM Query Rephrasing]
-    I --> C
-    I --> D
-    H --> J[Final Answer]
-```
+![RAG Pipeline Flow](images/rag_pipeline_flow.png)
 
 ## How It Works
 - **User Query:** User sends a question to the FastAPI `/ask` endpoint.
