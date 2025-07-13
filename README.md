@@ -87,7 +87,6 @@ See [`Result.txt`](./Result.txt) for example RAG answers. Here are a few samples
     "query": "Lung cancer?",
     "answer": "Lung cancer screening is covered by Medicare for individuals between the ages of 50-77 who have a history of smoking and meet certain criteria. The Part B deductible applies, and you pay nothing for this screening test if your doctor accepts assignment. Before your first lung cancer screening, you'll need to schedule an appointment with a health care provider to discuss the benefits and risks of lung cancer screening to decide if the screening is right for you. Requirements/conditions: * You're between 50-77 years old. * You don't have signs or symptoms of lung cancer (you're asymptomatic). * You've had a history of smoking. * You have a tobacco smoking history of at least 20 'pack years' (an average of one pack—20 cigarettes—per day for 20 years). * You get an order from your doctor.",
     "source_pages": [34, 37, 45],
-    #"primary_source_page": 45,
     "confidence_score": 0.45,
     "chunk_size": 386,
     "total_chunks_used": 5
@@ -96,7 +95,6 @@ See [`Result.txt`](./Result.txt) for example RAG answers. Here are a few samples
     "query": "What’s the Medicare drug coverage (Part D) late enrollment penalty?",
     "answer": "The Medicare drug coverage (Part D) late enrollment penalty is calculated by multiplying 1% of the 'national base beneficiary premium' ($36.78 in 2025) by the number of full, uncovered months that you were eligible but didn't have Medicare drug coverage (Part D) and went without other creditable prescription drug coverage. The final amount is rounded to the nearest $0.10 and added to your monthly premium. Requirements or conditions mentioned in the context for calculating the late enrollment penalty include: * How long you didn't have credible prescription drug coverage (Part D) after your Initial Enrollment Period ended * Whether you had other credible prescription drug coverage (Part D) * Your eligibility for Medicare drug coverage (Part D) * The national base beneficiary premium amount ($36.78 in 2025) * The rounding rule to the nearest $0.10 for the final amount.",
     "source_pages": [79, 84, 85],
-    #"primary_source_page": 85,
     "confidence_score": 0.74,
     "chunk_size": 554,
     "total_chunks_used": 5
@@ -105,7 +103,6 @@ See [`Result.txt`](./Result.txt) for example RAG answers. Here are a few samples
     "query": "What is Capital of India?",
     "answer": "Not found in context. The question 'What is Capital of India?' does not appear in the provided context.",
     "source_pages": [],
-    #"primary_source_page": null,
     "confidence_score": 0.0,
     "chunk_size": 0,
     "total_chunks_used": 0
