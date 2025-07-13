@@ -2,6 +2,16 @@
 
 This project is a Retrieval-Augmented Generation (RAG) system for answering Medicare-related questions using a PDF document as the knowledge base. It uses FastAPI, hybrid vector search (ChromaDB + FAISS), and an LLM (Ollama/llama2:7b) for answer generation.
 
+## Recommended System Requirements
+
+- **Operating System:** macOS, Linux, or Windows 10/11 (64-bit)
+- **CPU:** Modern multi-core processor (Intel i5/Ryzen 5 or better recommended)
+- **RAM:** 8 GB minimum (16 GB recommended for large PDFs or LLMs)
+- **Disk Space:** At least 5 GB free (for dependencies, vector DBs, and models)
+- **Python:** Version 3.11 (recommended)
+- **Internet:** Required for downloading models from Hugging Face Hub (if not already cached)
+- **Optional:** Apple Silicon (M1/M2) or NVIDIA GPU for faster embedding/model inference (if supported by your LLM backend)
+
 ## RAG Pipeline Flow
 
 ![RAG Pipeline Flow](images/rag_pipeline_flow.png)

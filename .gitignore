@@ -3,4 +3,3 @@ venv3/
 __pycache__/
 chroma_db/
 *.gguf
-*.pdf 
