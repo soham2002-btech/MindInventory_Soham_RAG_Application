@@ -19,7 +19,16 @@ This project is a Retrieval-Augmented Generation (RAG) system for answering Medi
 ## How It Works
 - **User Query:** User sends a question to the FastAPI `/ask` endpoint.
 - **Text Chunking (Semantic):** The PDF is split into semantic chunks (e.g., paragraphs) for efficient retrieval.
-- **ChromaDB & FAISS Retrieval:** The query is used to retrieve relevant chunks from both ChromaDB and FAISS vector stores.
+- **Embedding & Retrieval Strategies:**
+  - **Dense Embeddings:** Multiple SentenceTransformer models are used to generate dense vector representations of each chunk. These include:
+    - `all-MiniLM-L6-v2` (small, fast, general-purpose)
+    - `all-mpnet-base-v2` (higher quality, general-purpose)
+    - `paraphrase-multilingual-MiniLM-L12-v2` (multilingual support)
+    Dense embeddings enable semantic search, allowing the system to find contextually relevant chunks even if the query wording differs from the document.
+  - **Sparse Embeddings:** A TF-IDF vectorizer is used to create sparse vectors for all chunks. Sparse search (using cosine similarity) is effective for keyword-heavy or fact-based queries, and helps capture exact or near-exact matches.
+  - **Keyword-based Search:** The system extracts important keywords from the query and directly matches them in the text chunks. This strategy is especially useful for queries with specific terminology or when dense/sparse embeddings may miss exact matches.
+  - **Hybrid Retrieval:** Results from dense, sparse, and keyword-based searches are combined, deduplicated, and reranked to select the most relevant chunks for answer generation.
+- **ChromaDB & FAISS Retrieval:** The query is used to retrieve relevant chunks from both ChromaDB and FAISS vector stores, leveraging the above embedding strategies.
 - **Combine Results:** Results from both stores are combined.
 - **Rerank:** All retrieved chunks are reranked by semantic similarity to the query; the top 5 are selected.
 - **Validation Node:** Checks if the retrieved content matches the query intent. If not, the query is rephrased using the LLM and retrieval is retried (loop).
