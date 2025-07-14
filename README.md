@@ -183,3 +183,19 @@ See [`Result.txt`](./Result.txt) for example RAG answers. Here are a few samples
 - The system uses semantic chunking for the PDF.
 - Both ChromaDB and FAISS are used for hybrid retrieval.
 - The pipeline includes reranking, validation, and LLM-based query rephrasing for robust answer generation. 
+
+## Code Structure
+
+The main files and their purposes are:
+
+- **app.py**: The FastAPI application. Handles API endpoints, loads the PDF, initializes chunking and embedding stores, and manages the RAG pipeline.
+- **pdf_chunker.py**: Contains the `PDFChunker` class, which implements semantic chunking (splitting the PDF into meaningful text chunks for retrieval).
+- **embed_store.py**: Implements the hybrid embedding store, combining dense (multiple transformer models), sparse (TF-IDF), and keyword-based search strategies. Handles storage and retrieval of chunk embeddings using ChromaDB and FAISS.
+- **llm_answer.py**: Handles reranking of retrieved chunks and communicates with the LLM (Ollama/llama2:7b) to generate the final answer.
+- **chunking_evaluator.py**: Tools for evaluating and comparing different chunking strategies (e.g., sliding window vs. semantic chunking).
+- **requirements.txt**: Lists all Python dependencies needed to run the project.
+- **Result.txt**: Contains sample RAG answers for reference.
+- **images/**: Contains diagrams and visualizations for the project.
+- **medicare-and-you.pdf**: The knowledge base PDF used for answering Medicare-related questions.
+
+This structure is designed to separate concerns: API logic, chunking, embedding/retrieval, LLM interaction, and evaluation are all modular and easy to understand for new contributors. 
