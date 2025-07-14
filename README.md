@@ -53,7 +53,33 @@ This project is a Retrieval-Augmented Generation (RAG) system for answering Medi
    ```
 4. **Ask questions:**
    - Use the `/ask` endpoint (e.g., via Swagger UI at `http://localhost:8000/docs` or with `curl`/Postman).
-5. **Logs:**
+5. **Example Query Using Swagger UI or Postman:**
+   - You can test the `/ask` endpoint using the built-in Swagger UI at `http://localhost:8000/docs` or with Postman.
+   - **Sample payload:**
+     ```json
+     {
+       "query": "What is Some of the items and services that Original Medicare doesn’t cover ?"
+     }
+     ```
+   - **Sample response :**
+     ```json
+      {
+      "answer": "Some of the items and services that Original Medicare doesn't cover include: 1. Routine physical exams: Original Medicare does not cover routine physical exams. 2. Hearing aids and exams for fitting them: Original Medicare does not cover hearing aids or exams for fitting them. 3. Concierge care (also called concierge medicine, retainer-based medicine, boutique medicine, platinum practice, or direct care): Original Medicare does not cover concierge care, which refers to medical care that is paid for through an annual fee or retainer rather than through traditional fee-for-service billing. 4. Covered items or services you get from a doctor or other provider that has opted out of participating in Medicare: Original Medicare does not cover items or services received from a doctor or other provider who has opted out of participating in Medicare, except in the case of an emergency or urgent need. 5. Most dental care: Original Medicare typically does not cover most dental care, including routine cleanings, fillings, tooth extractions, or items like dentures. However, some dental services may be covered if they are closely related to a covered medical service, such as a heart valve repair or replacement. 6. Long-term care: Original Medicare and most health insurance, including Medigap, do not pay for non-medical long-term care services, such as personal care assistance, like help with everyday activities, including dressing, bathing, and using the bathroom. Non-medical long-term care services may also include home-delivered meals, adult day health care, home and community-based services, and others. You may be eligible for some of these services through Medicaid or you can choose to buy private long-term care insurance. Note: The information provided is based on the context given and may not be comprehensive or up-to-date. It is important to consult with Medicare or a healthcare professional for the most accurate and current information.",
+      "source_pages": [
+         9,
+         44,
+         56,
+         57,
+         75
+      ],
+      "confidence_score": 0.705845832824707,
+      "chunk_size": 139,
+      "total_chunks_used": 5
+       }
+       ```
+   - In Swagger UI, expand the `/ask` endpoint, click "Try it out", and paste the above JSON in the request body.
+   - In Postman, create a POST request to `http://localhost:8000/ask` with the above JSON as the body (set type to `application/json`).
+6. **Logs:**
    - Retrievals from both ChromaDB and FAISS, reranking, validation, and LLM generation are all logged for explainability.
 
 ## Requirements & Compatibility
